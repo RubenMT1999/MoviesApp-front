@@ -1,0 +1,32 @@
+<div id="pantallacompleta">
+  <app-header></app-header>
+
+  
+  <app-second-header></app-second-header>
+  
+
+  <div *ngIf="!loading" class="row  p-3">
+    <div *ngFor="let pelicula of peliculasPopulares" class="col-md-2 col-sm-6 mb-4">
+      <div class="card bg-dark text-white">
+        <img [src]="pelicula.poster_path! | imagen" class="card-img" alt="{{ pelicula.title }}">
+        <div class="card-img-overlay d-flex flex-column justify-content-end">
+          <h5 class="card-title">{{ pelicula.title }}</h5>
+          <p class="card-text">{{ pelicula.release_date }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 mt-3 d-flex justify-content-center">
+      <button class="btn btn-primary mx-2" (click)="paginaAnterior()">Página Anterior</button>
+      <button class="btn btn-primary" (click)="siguientePagina()">Página Siguiente</button>
+    </div>
+  </div>
+
+  <div *ngIf="loading" class="d-flex justify-content-center mt-3">
+    <div class="spinner-border text-light" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  
+
+</div>

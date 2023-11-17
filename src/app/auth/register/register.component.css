@@ -1,0 +1,42 @@
+
+/* Estilo del fondo con opacidad */
+#pantallacompleta {
+    background-color: rgba(0, 0, 0, 0.9); /* Color de fondo negro con opacidad */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+    min-height: 100vh; /* Ajusta el alto mínimo */
+    overflow: hidden; /* Oculta el desbordamiento del fondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+  }
+  
+  .container {
+    background-color: transparent; /* Fondo transparente */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el relleno */
+    width: 100%;
+    margin-bottom: 200px;
+  }
+
+  .p-3 button {
+    margin-right: 20px; /* Agrega un margen de 10px entre los botones */
+  }
+  
+  
+  form input {
+    margin: 5px auto;
+    box-shadow: rgb(0 0 0 / 26%) 0 0 3px 1px;
+    width: 300px !important;
+    border: 0;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+  
+  button:hover {
+    background-color: #FFA500;
+  }
+  
+

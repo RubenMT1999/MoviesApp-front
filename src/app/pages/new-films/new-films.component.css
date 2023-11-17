@@ -1,0 +1,32 @@
+
+
+
+#pantallacompleta{
+    background-color: rgba(0, 0, 0, 0.9);
+    min-height: 100vh;
+}
+
+
+.card-img-overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.08) 49%, rgba(0, 0, 0, 0.75));
+    color: #fff; /* Color del texto */
+    padding: 10px; /* Ajusta el relleno según sea necesario */
+  }
+  
+
+@media (max-width: 650px) {
+    .col-sm-6 {
+        width: 80%;
+        height: auto;
+        margin: auto; /* Centrar horizontalmente */
+        text-align: center; /* Centrar verticalmente */
+    }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+    .col-sm-6 {
+        width: 25%; /* Cambiado de 80% a 50% para mostrar 4 tarjetas en lugar de 6 */
+        height: auto;
+    }
+}
+

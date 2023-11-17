@@ -1,0 +1,33 @@
+<div id="pantallacompleta">
+<div class="container">
+    <form [formGroup]="miFormulario" (ngSubmit)="login()">
+      <div class="form-group input-group-lg">
+        <input
+          type="text"
+          class="form-control"
+          formControlName="username"
+          placeholder="Nombre de usuario"
+          id="custominput"
+        />
+      </div>
+      <div class="form-group input-group-lg">
+        <input
+          type="password"
+          class="form-control"
+          formControlName="password"
+          placeholder="Contraseña"
+          id="custominput2"
+        />
+      </div>
+      <div class="form-check d-flex justify-content-center">
+        <input id="checkbox-signup" type="checkbox" class="form-check-input me-2" formControlName="remember">
+        <label for="checkbox-signup" class="form-check-label text-white"> Recordarme </label>
+      </div>
+      <a class="text-white d-flex justify-content-center">¿Has olvidado tu contraseña?</a>
+      <div class="p-3 d-flex justify-content-center">
+        <button type="submit" class="btn btn-dark btn-outline-secondary text-white">Iniciar Sesión</button>
+        <button type="button" routerLink="/auth/register" class="btn btn-light">Registrarme</button>
+      </div>
+    </form>
+  </div>
+</div>

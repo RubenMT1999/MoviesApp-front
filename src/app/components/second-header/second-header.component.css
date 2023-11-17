@@ -1,0 +1,26 @@
+
+.list-group-item {
+    /* Estilos para todos los elementos li con la clase list-group-item */
+    background-color: transparent;
+  }
+  
+
+  a {
+    text-decoration: none; 
+    color: #ffffff96;
+    font-size: 15px !important;
+  }
+  
+  a:hover {
+    /* Estilos cuando el mouse pasa sobre el enlace (puedes ajustar según tus preferencias) */
+    text-decoration: none; /* Puedes poner 'none' si no deseas subrayado al pasar el mouse */
+    color: #ffffff96; /* Cambia el color al pasar el mouse (puedes ajustar según tus preferencias) */
+  }
+
+  .personalizado{
+    color: white;
+  }
+
+  .personalizado:hover {
+    color: white; /* Puedes ajustar el color al pasar el mouse si lo deseas */
+  }

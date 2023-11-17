@@ -1,0 +1,30 @@
+
+.icon-white {
+    color: #CECECE;
+    font-size: 33px;
+    width: auto;
+    height: auto;
+  }
+
+  .icon-white2 {
+    color: #CECECE;
+    font-size: 40px;
+    width: auto;
+    height: auto;
+  }
+
+
+
+::ng-deep .navbar-dark .navbar-nav .nav-link.active,
+::ng-deep .navbar-dark .navbar-nav .show>.nav-link {
+  color: #CECECE !important; /* Cambia esto al color que desees */
+}
+
+
+.custom-color{
+    background-color: #CECECE !important;
+}
+
+.span-color{
+    background-color: #CECECE;
+}
